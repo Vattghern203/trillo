@@ -8,6 +8,11 @@
 }
 
 .header {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     height: 7rem;
     background-color: #FFF;
     border-bottom: var(--color-grey-light-2);
