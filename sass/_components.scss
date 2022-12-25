@@ -200,10 +200,6 @@
         width: 100%;
         display: block;
     }
-
-    &__item {
-
-    }
 }
 
 /////////////////////////////////////////////////
@@ -212,7 +208,7 @@
 
     display: flex;
     align-items: center;
-    border-bottom: .1rem solid var(--color-grey-light-2);
+    border-bottom: var(--line);
     
 
     &__heading {
