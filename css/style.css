@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 COLORS
 
@@ -272,8 +273,15 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+.btn-inline span {
+  margin-left: 0.3rem;
+  transition: margin-left 0.2 ease;
+}
 .btn-inline:hover {
   color: var(--color-grey-dark-1);
+}
+.btn-inline:hover span {
+  margin-left: 0.8rem;
 }
 .btn-inline:focus {
   outline: none;
@@ -345,6 +353,60 @@ body {
   margin-right: -1.5rem;
 }
 
+.review {
+  background-color: #FFF;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.review__text {
+  margin-bottom: 2rem;
+  z-index: 10;
+  position: relative;
+}
+.review__photo {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+.review__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review__user-box {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+.review__user-name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.review__user-date {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-grey-dark-3);
+}
+.review__rating {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.review::before {
+  content: "“";
+  font-family: sans-serif;
+  position: absolute;
+  line-height: 1;
+  top: -2.75rem;
+  left: -1rem;
+  font-size: 20rem;
+  color: var(--color-grey-light-2);
+  z-index: 9;
+}
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -382,13 +444,13 @@ body {
 
 .detail {
   display: flex;
+  font-size: 1.4rem;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
 }
 
 .description {
-  font-size: 1.4rem;
   background-color: #FFF;
   box-shadow: var(--shadow-light);
   padding: 3rem;
@@ -397,8 +459,10 @@ body {
 }
 
 .user-reviews {
-  background-color: pink;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
