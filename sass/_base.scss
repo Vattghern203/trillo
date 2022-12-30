@@ -36,6 +36,11 @@ Grey dark 3: #999
     --line: .1rem solid var(--color-grey-light-2)
 }
 
+$bp-largest: 75em;   // 1200px / 16px
+$bp-large: 68.75em;  // 1100px / 16px
+$bp-medium: 56.25em;  // 900px  / 16px
+
+
 *,
 *::after,
 *::before {
@@ -47,6 +52,10 @@ Grey dark 3: #999
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px -> 10px / 16px = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%; // makes 1rem = 8px -> 8px / 16px
+    }
 }
 
 body {
