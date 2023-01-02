@@ -406,11 +406,11 @@
         margin-right: .7rem;
 
         // Older browsers
-        //background-image: url(../img/chevron-thin-right.svg);
-        //background-size: cover;
+        background-image: url(../img/chevron-thin-right.svg);
+        background-size: cover;
 
         // Newer Browsers - masks
-        @supports (-webkit-mask-image: ulr()) or (mask-image: ulr()) {
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
 
             background-color: var(--color-primary);
             -webkit-mask-image: url(../img/chevron-thin-right.svg);
